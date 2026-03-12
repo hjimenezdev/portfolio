@@ -343,8 +343,6 @@ nav.scrolled {
   height: 100%;
   object-fit: cover;
   object-position: top center;
-  filter: grayscale(20%) brightness(0.9);
-  mix-blend-mode: luminosity;
 }
 .hero-image-overlay {
   position: absolute;
@@ -634,16 +632,20 @@ nav.scrolled {
 .exp-list {
   border-top: 1px solid var(--border);
 }
+
 .exp-item {
   display: grid;
   grid-template-columns: 160px 1fr 180px;
   gap: 40px;
   padding: 48px 0;
   border-bottom: 1px solid var(--border);
-  transition: padding-left 0.35s ease;
   align-items: start;
   position: relative;
+  transition:
+    padding-left 1s ease-in-out,
+    background 1s ease;
 }
+
 .exp-item::before {
   content: "";
   position: absolute;
@@ -651,18 +653,78 @@ nav.scrolled {
   top: 0;
   bottom: 0;
   width: 2px;
-  background: var(--purple);
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--purple) 30%,
+    var(--purple-light) 70%,
+    transparent
+  );
   transform: scaleY(0);
-  transform-origin: top;
-  transition: transform 0.35s;
+  transform-origin: center;
+  border-radius: 2px;
+  transition: transform 1s ease-in-out;
 }
+
+.exp-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(139, 92, 246, 0.05) 0%,
+    transparent 55%
+  );
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s ease;
+}
+
 .exp-item:hover {
-  padding-left: 20px;
+  padding-left: 22px;
 }
 .exp-item:hover::before {
   transform: scaleY(1);
 }
+.exp-item:hover::after {
+  opacity: 1;
+}
 
+.exp-item .exp-date {
+  transition:
+    color 1s ease,
+    transform 1s ease-in-out;
+}
+.exp-item:hover .exp-date {
+  color: var(--purple-light);
+  transform: translateX(4px);
+}
+
+.exp-item .exp-role {
+  transition: transform 1s ease-in-out;
+}
+.exp-item:hover .exp-role {
+  transform: translateX(2px);
+}
+
+.exp-item .exp-desc {
+  transition: color 1s ease;
+}
+.exp-item:hover .exp-desc {
+  color: #b8b5cc;
+}
+
+.exp-item .exp-location {
+  transition:
+    color 1s ease,
+    transform 1s ease-in-out;
+}
+.exp-item:hover .exp-location {
+  color: var(--purple-light);
+  transform: translateX(-4px);
+}
+
+/* Texto del rol */
 .exp-date {
   font-family: var(--font-mono);
   font-size: 0.68rem;
