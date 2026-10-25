@@ -14,9 +14,12 @@ Portfolio personal de **Hugo Jiménez Muñoz**, Desarrollador Web Frontend. Dise
 
 ```
 portfolio/
-├── index.html     # Estructura HTML y contenido
-├── styles.css     # Estilos, variables, animaciones y responsive
-├── main.js        # Lógica: cursor, scroll, idioma, formulario y skills
+├── public/
+│   ├── index.html          # Estructura HTML y contenido
+│   ├── styles.css          # Estilos, variables, animaciones y responsive
+│   ├── main.js             # Lógica: cursor, scroll, idioma, formulario y skills
+│   ├── favicon.ico         # Icono de la pestaña del navegador
+│   └── profile_photo.jpg   # Foto de perfil
 └── README.md
 ```
 
