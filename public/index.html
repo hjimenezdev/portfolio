@@ -220,6 +220,10 @@
           <div class="skills-section-title" data-en>Tech stack</div>
           <div class="skills-categories">
             <div>
+              <div class="skill-category-label">Data Engineering</div>
+              <div class="skill-icons-row" id="skills-data"></div>
+            </div>
+            <div>
               <div class="skill-category-label">Frontend</div>
               <div class="skill-icons-row" id="skills-frontend"></div>
             </div>
@@ -311,23 +315,127 @@
           </div>
         </div>
 
-        <div class="project-grid">
-          <div class="project-card reveal">
+        <article class="featured reveal">
+          <div class="featured-main">
+            <div class="featured-kicker" data-es>
+              Proyecto destacado · Data Engineering
+            </div>
+            <div class="featured-kicker" data-en>
+              Featured project · Data Engineering
+            </div>
+            <h3 class="featured-name">Cívica F.C.</h3>
+            <p class="featured-desc" data-es>
+              Entregable final del programa de Data Engineering y proyecto
+              propio, construido de principio a fin sobre un dataset de Kaggle.
+              Un pipeline con dbt y Snowflake que convierte datos en bruto de
+              fútbol europeo en un modelo en estrella, con pruebas de calidad y
+              ejecución diaria automática.
+            </p>
+            <p class="featured-desc" data-en>
+              Final deliverable of the Data Engineering program and a personal
+              project, built end to end on a Kaggle dataset. A dbt and
+              Snowflake pipeline that turns raw European soccer data into a
+              star schema, with data quality tests and automated daily runs.
+            </p>
+
+            <div class="featured-stats">
+              <div class="featured-stat">
+                <strong>25k</strong>
+                <span data-es>Partidos</span>
+                <span data-en>Matches</span>
+              </div>
+              <div class="featured-stat">
+                <strong>11</strong>
+                <span data-es>Ligas</span>
+                <span data-en>Leagues</span>
+              </div>
+              <div class="featured-stat">
+                <strong>9</strong>
+                <span data-es>Modelos staging</span>
+                <span data-en>Staging models</span>
+              </div>
+              <div class="featured-stat">
+                <strong>7</strong>
+                <span data-es>Tablas Gold</span>
+                <span data-en>Gold tables</span>
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span class="project-tag">dbt</span>
+              <span class="project-tag">Snowflake</span>
+              <span class="project-tag">SQL</span>
+              <span class="project-tag">Power BI</span>
+            </div>
+
+            <div class="featured-cta">
+              <a href="football-project.html" class="btn-primary" data-es
+                >Ver caso de estudio</a
+              >
+              <a href="football-project.html" class="btn-primary" data-en
+                >View case study</a
+              >
+              <a
+                href="https://github.com/hjimenezdev/proyect"
+                target="_blank"
+                class="project-link"
+                data-es
+                >Código</a
+              >
+              <a
+                href="https://github.com/hjimenezdev/proyect"
+                target="_blank"
+                class="project-link"
+                data-en
+                >Code</a
+              >
+            </div>
+          </div>
+
+          <div class="featured-visual" aria-hidden="true">
+            <div class="fz fz-bronze">
+              <span class="fz-layer">Bronze</span>
+              <span class="fz-name" data-es>Datos en bruto</span>
+              <span class="fz-name" data-en>Raw data</span>
+              <span class="fz-detail">Kaggle</span>
+            </div>
+            <div class="fz fz-silver">
+              <span class="fz-layer">Silver</span>
+              <span class="fz-name">Staging</span>
+              <span class="fz-detail">dbt views</span>
+            </div>
+            <div class="fz fz-gold">
+              <span class="fz-layer">Gold</span>
+              <span class="fz-name">Marts</span>
+              <span class="fz-detail">star schema</span>
+            </div>
+          </div>
+        </article>
+
+        <div class="section-label projects-subhead" data-es>Desarrollo web</div>
+        <div class="section-label projects-subhead" data-en>Web development</div>
+
+        <div class="project-list">
+          <div class="project-row reveal">
             <div class="project-number">01</div>
-            <div class="project-name">Norway Agency</div>
-            <p class="project-desc" data-es>
+            <div class="project-row-main">
+              <div class="project-name">Norway Agency</div>
+              <div class="project-tags">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">JavaScript</span>
+            </div>
+            </div>
+            <div class="project-row-desc">
+              <p class="project-desc" data-es>
               Sitio web estático para agencia de viajes. Diseño limpio,
               navegación fluida y slider de imágenes para una experiencia de
               usuario pulida.
             </p>
-            <p class="project-desc" data-en>
+              <p class="project-desc" data-en>
               Static website for a travel agency. Clean design, smooth
               navigation and image slider for a polished UX.
             </p>
-            <div class="project-tags">
-              <span class="project-tag">HTML</span>
-              <span class="project-tag">CSS</span>
-              <span class="project-tag">JavaScript</span>
             </div>
             <div class="project-links">
               <a
@@ -353,22 +461,26 @@
             </div>
           </div>
 
-          <div class="project-card reveal reveal-delay-1">
+          <div class="project-row reveal">
             <div class="project-number">02</div>
-            <div class="project-name">TrendSync</div>
-            <p class="project-desc" data-es>
-              Plataforma que combina blog de moda y tienda online. CSS
-              personalizado por sección e interactividad dinámica.
-            </p>
-            <p class="project-desc" data-en>
-              Platform combining a fashion blog and online store. Custom CSS per
-              section and dynamic interactivity.
-            </p>
-            <div class="project-tags">
+            <div class="project-row-main">
+              <div class="project-name">TrendSync</div>
+              <div class="project-tags">
               <span class="project-tag">HTML</span>
               <span class="project-tag">CSS</span>
               <span class="project-tag">JavaScript</span>
               <span class="project-tag">E-commerce</span>
+            </div>
+            </div>
+            <div class="project-row-desc">
+              <p class="project-desc" data-es>
+              Plataforma que combina blog de moda y tienda online. CSS
+              personalizado por sección e interactividad dinámica.
+            </p>
+              <p class="project-desc" data-en>
+              Platform combining a fashion blog and online store. Custom CSS per
+              section and dynamic interactivity.
+            </p>
             </div>
             <div class="project-links">
               <a
@@ -394,22 +506,26 @@
             </div>
           </div>
 
-          <div class="project-card reveal reveal-delay-2">
+          <div class="project-row reveal">
             <div class="project-number">03</div>
-            <div class="project-name">Ecosafari Bioparc</div>
-            <p class="project-desc" data-es>
-              Sitio educativo sobre conservación. Reto: organizar información
-              densa de forma clara y accesible para todos los visitantes.
-            </p>
-            <p class="project-desc" data-en>
-              Educational conservation site. Challenge: organizing dense
-              information clearly and accessibly for all visitors.
-            </p>
-            <div class="project-tags">
+            <div class="project-row-main">
+              <div class="project-name">Ecosafari Bioparc</div>
+              <div class="project-tags">
               <span class="project-tag">HTML</span>
               <span class="project-tag">CSS</span>
               <span class="project-tag">JavaScript</span>
               <span class="project-tag">Education</span>
+            </div>
+            </div>
+            <div class="project-row-desc">
+              <p class="project-desc" data-es>
+              Sitio educativo sobre conservación. Reto: organizar información
+              densa de forma clara y accesible para todos los visitantes.
+            </p>
+              <p class="project-desc" data-en>
+              Educational conservation site. Challenge: organizing dense
+              information clearly and accessibly for all visitors.
+            </p>
             </div>
             <div class="project-links">
               <a
@@ -435,22 +551,26 @@
             </div>
           </div>
 
-          <div class="project-card reveal reveal-delay-3">
+          <div class="project-row reveal">
             <div class="project-number">04</div>
-            <div class="project-name">John Smith Studio</div>
-            <p class="project-desc" data-es>
-              Portfolio estático para estudio creativo. Diseño limpio,
-              multimedia bien gestionado y atención al detalle visual.
-            </p>
-            <p class="project-desc" data-en>
-              Static portfolio for a creative studio. Clean design, well-managed
-              multimedia and strong visual attention to detail.
-            </p>
-            <div class="project-tags">
+            <div class="project-row-main">
+              <div class="project-name">John Smith Studio</div>
+              <div class="project-tags">
               <span class="project-tag">HTML</span>
               <span class="project-tag">CSS</span>
               <span class="project-tag">JavaScript</span>
               <span class="project-tag">Portfolio</span>
+            </div>
+            </div>
+            <div class="project-row-desc">
+              <p class="project-desc" data-es>
+              Portfolio estático para estudio creativo. Diseño limpio,
+              multimedia bien gestionado y atención al detalle visual.
+            </p>
+              <p class="project-desc" data-en>
+              Static portfolio for a creative studio. Clean design, well-managed
+              multimedia and strong visual attention to detail.
+            </p>
             </div>
             <div class="project-links">
               <a
@@ -475,50 +595,6 @@
               >
             </div>
           </div>
-
-          <div class="project-card project-card-wide reveal">
-            <div class="project-number">05</div>
-            <div class="project-name">Cívica F.C.</div>
-            <p class="project-desc" data-es>
-              Pipeline de datos de fútbol europeo con dbt y Snowflake: unos
-              25.000 partidos de 11 ligas, arquitectura medallion, modelo en
-              estrella, pruebas de calidad y ejecución diaria automática.
-            </p>
-            <p class="project-desc" data-en>
-              European soccer data pipeline with dbt and Snowflake: around
-              25,000 matches from 11 leagues, medallion architecture, star
-              schema, data quality tests and automated daily runs.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">dbt</span>
-              <span class="project-tag">Snowflake</span>
-              <span class="project-tag">SQL</span>
-              <span class="project-tag">Power BI</span>
-              <span class="project-tag">Data Engineering</span>
-            </div>
-            <div class="project-links">
-              <a
-                href="https://github.com/hjimenezdev/project"
-                target="_blank"
-                class="project-link"
-                data-es
-                >Código</a
-              >
-              <a
-                href="https://github.com/hjimenezde/project"
-                target="_blank"
-                class="project-link"
-                data-en
-                >Code</a
-              >
-              <a href="football-project.html" class="project-link" data-es
-                >Caso de estudio</a
-              >
-              <a href="football-project.html" class="project-link" data-en
-                >Case study</a
-              >
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -534,24 +610,22 @@
             Let's talk<br />about your<br /><em>project.</em>
           </h2>
           <div class="contact-meta">
-            <a href="mailto:hugo@hjimenezdev.com" class="contact-meta-item">
-              <span class="contact-meta-dot"></span>hugo@hjimenezdev.com
+            <a href="mailto:hjimenezdev@gmail.com" class="contact-meta-item">
+              <span class="contact-meta-dot"></span>hjimenezdev@gmail.com
             </a>
             <a
               href="https://github.com/hjimenezdev"
               target="_blank"
               class="contact-meta-item"
             >
-              <span class="contact-meta-dot"></span>github.com/hjimenezdev
+              <span class="contact-meta-dot"></span>Github
             </a>
             <a
-              href="https://hjimenezdev.vercel.app/CV%20-%20Hugo%20Jim%C3%A9nez%20Mu%C3%B1oz.pdf"
+              href="https://linkedin.com/in/hugo-jimenez-munoz"
               target="_blank"
               class="contact-meta-item"
             >
-              <span class="contact-meta-dot"></span>
-              <span data-es>Descargar CV</span>
-              <span data-en>Download CV</span>
+              <span class="contact-meta-dot"></span>LinkedIn
             </a>
           </div>
         </div>
@@ -614,10 +688,10 @@
           >GitHub</a
         >
         <a
-          href="https://hjimenezdev.vercel.app/CV%20-%20Hugo%20Jim%C3%A9nez%20Mu%C3%B1oz.pdf"
+          href="https://linkedin.com/in/hugo-jimenez-munoz"
           target="_blank"
           class="footer-link"
-          >CV</a
+          >LinkedIn</a
         >
       </div>
     </footer>

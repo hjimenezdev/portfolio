@@ -101,6 +101,12 @@ const SKILLS = {
     { name: "MySQL", icon: "https://cdn.simpleicons.org/mysql/4479A1" },
     { name: "MongoDB", icon: "https://cdn.simpleicons.org/mongodb/47A248" },
   ],
+  data: [
+    { name: "dbt Cloud", icon: "https://cdn.simpleicons.org/dbt/FF694B" },
+    { name: "Snowflake", icon: "https://cdn.simpleicons.org/snowflake/29B5E8" },
+    { name: "SQL", icon: null },
+    { name: "Power BI", icon: "https://cdn.simpleicons.org/powerbi/F2C811" },
+  ],
   tools: [
     { name: "Git", icon: "https://cdn.simpleicons.org/git/F05032" },
     { name: "GitHub", icon: "https://cdn.simpleicons.org/github/FFFFFF" },
@@ -121,13 +127,26 @@ function renderSkills(containerId, items) {
     const pill = document.createElement("div");
     pill.className = "skill-pill";
     pill.innerHTML = `
-      <img src="${skill.icon}" alt="${skill.name}" onerror="this.style.display='none'" />
+      ${skill.icon ? `<img src="${skill.icon}" alt="${skill.name}" onerror="this.style.display='none'" />` : ""}
       <span>${skill.name}</span>
     `;
+    container.appendChild(pill); 
+  });
+}
+
+function renderConcepts(containerId, items) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+
+  items.forEach(([es, en]) => {
+    const pill = document.createElement("div");
+    pill.className = "skill-pill";
+    pill.innerHTML = `<span data-es>${es}</span><span data-en>${en}</span>`;
     container.appendChild(pill);
   });
 }
 
+renderSkills("skills-data", SKILLS.data);
 renderSkills("skills-frontend", SKILLS.frontend);
 renderSkills("skills-backend", SKILLS.backend);
 renderSkills("skills-tools", SKILLS.tools);
