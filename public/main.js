@@ -102,10 +102,10 @@ const SKILLS = {
     { name: "MongoDB", icon: "https://cdn.simpleicons.org/mongodb/47A248" },
   ],
   data: [
-    { name: "dbt Cloud", icon: "https://cdn.simpleicons.org/dbt/FF694B" },
-    { name: "Snowflake", icon: "https://cdn.simpleicons.org/snowflake/29B5E8" },
-    { name: "SQL", icon: null },
-    { name: "Power BI", icon: "https://cdn.simpleicons.org/powerbi/F2C811" },
+    { name: "dbt Cloud", icon: "icons/dbt.svg" },
+    { name: "Snowflake", icon: "icons/snowflake.svg" },
+    { name: "SQL", icon: "icons/sql.svg" },
+    { name: "Power BI", icon: "icons/powerbi.svg" },
   ],
   tools: [
     { name: "Git", icon: "https://cdn.simpleicons.org/git/F05032" },

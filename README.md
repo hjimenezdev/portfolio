@@ -1,6 +1,6 @@
 # Hugo Jiménez — Portfolio
 
-Portfolio personal de **Hugo Jiménez Muñoz**, Desarrollador Web Frontend. Diseño dark minimalista con detalles en morado, completamente bilingüe (ES/EN) y desplegable como sitio estático.
+Portfolio personal de **Hugo Jiménez Muñoz**, Data Engineer y Desarrollador Full Stack. Diseño dark minimalista con detalles en morado, completamente bilingüe (ES/EN) y desplegable como sitio estático.
 
 ---
 
